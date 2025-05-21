@@ -20,7 +20,7 @@ const OffersSection = () => {
           name="keywords"
           content="Blackly, blackly, app development, website development, app publishing, digital marketing, lead generation, business strategy, market research, app promotion, online consulting, tech services, exclusive deals, IT solutions"
         />
-        <meta name="author" content="YourCompanyName" />
+        <meta name="author" content="Blackly" />
       </Helmet>
 
       <Container>
