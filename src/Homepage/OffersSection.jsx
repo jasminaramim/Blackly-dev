@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import development from "../assets/1.png";
 import marketing from "../assets/2 (2).png";
@@ -8,6 +9,20 @@ import Container from "@/Shared/Container";
 const OffersSection = () => {
   return (
     <div id="offers" className="bg-[#111722] py-8">
+      {/* Helmet SEO */}
+      <Helmet>
+        {/* <title>Exclusive Offers - App Development, Marketing & Consulting</title> */}
+        <meta
+          name="description"
+          content="Explore our exclusive deals on professional app development, marketing campaigns, and strategic business consulting. Grow your business with expert-driven solutions."
+        />
+        <meta
+          name="keywords"
+          content="Blackly, blackly, app development, website development, app publishing, digital marketing, lead generation, business strategy, market research, app promotion, online consulting, tech services, exclusive deals, IT solutions"
+        />
+        <meta name="author" content="YourCompanyName" />
+      </Helmet>
+
       <Container>
         <div className="text-center mb-12 w-[95%] lg:w-[60%] mx-auto">
           <h2 className="text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-5 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
@@ -25,9 +40,9 @@ const OffersSection = () => {
           <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-102 flex flex-col justify-between">
             <div className="w-full mb-6 ">
               <img
-                className="w-full  object-cover rounded-md"
+                className="w-full object-cover rounded-md"
                 src={development}
-                alt=""
+                alt="App Development and Publishing"
               />
             </div>
             <div className="flex flex-col">
@@ -70,7 +85,7 @@ const OffersSection = () => {
               <img
                 className="w-full object-cover rounded-md"
                 src={marketing}
-                alt=""
+                alt="Marketing and Promotion"
               />
             </div>
             <div className="flex flex-col">
@@ -110,7 +125,7 @@ const OffersSection = () => {
               <img
                 className="w-full object-cover rounded-md"
                 src={consulting}
-                alt=""
+                alt="Consulting and Strategy"
               />
             </div>
             <div className="flex flex-col">

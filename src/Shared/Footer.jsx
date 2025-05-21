@@ -141,10 +141,9 @@ const Footer = () => {
                 <img src={logoText} alt="" />
               </div>
             </div>
-            <p className="text-gray-400 mt-4 w-[80%]">
-              Delivering premium app development, web solutions, and digital
-              marketing expertise.
-            </p>
+            <p className="text-gray-400 mt-4 w-[80%] mx-auto md:mx-0">
+                Blackly delivers premium web development, mobile app development, and digital marketing solutions to grow your business.
+              </p>
           </div>
           {/* Quick Links */}
           <div className="w-full md:w-1/3 flex justify-around md:justify-between">
